@@ -1,4 +1,7 @@
 <h1>Welcome To Angular</h1>
+<h2>Count :{{count}} </h2>
+<button (click)="childComp.childMethod()">Calling method of counter</button>
+<app-counter-component #childComp [count]="count" (handleCount)="setCount($event)"></app-counter-component>
 <p>Selected PostCode: {{SelectedPostCode}}</p>
 <app-postcode-card (mapRequested)="setSelectedPostCode($event)" [postcode]="postcode1" [area]="area1"></app-postcode-card>
 <app-postcode-card  (mapRequested)="setSelectedPostCode($event)" [postcode]="postcode2" [area]="area2"></app-postcode-card>
