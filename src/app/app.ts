@@ -12,5 +12,10 @@ export class App {
   area1="Westminster" 
   postcode2= "M1 1AF" 
   area2="Manchester City Centre"
+  SelectedPostCode :string=""
+  setSelectedPostCode(pc:string)
+  {
+    this.SelectedPostCode = pc
+  }
   protected readonly title = signal('angular-exercises');
 }
