@@ -5,14 +5,18 @@ import {CounterComponent} from "./counter-component/counter-component"
 import { TodoQUE } from './todo-que/todo-que';
 import {CommonModule} from "@angular/common"
 import { Pipeseg } from './pipeseg/pipeseg';
+import { Task } from './task/task';
+import {InitialsPipe} from "./initials-pipe"
 @Component({
   selector: 'app-root',
-  imports: [CommonModule,RouterOutlet,PostcodeCard,CounterComponent,TodoQUE,Pipeseg],
+  imports: [InitialsPipe,Task,CommonModule,RouterOutlet,PostcodeCard,CounterComponent,TodoQUE,Pipeseg],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+  name  = "John Capner"
 isSuccess=true
+
  showMessage = false
 showMesageTrue()
 {

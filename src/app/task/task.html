@@ -1,0 +1,14 @@
+<p>welcome <b>{{username}}</b></p>
+<p *ngIf="isLoggedIn">user logged in </p>
+<ul>
+    <li *ngFor="let f of fruits">{{f}}</li>
+</ul>
+<p [ngClass]="{'active':isActive}">User is Active</p>
+<ul>
+    <li *ngFor="let n of numbers">{{n}}</li>
+</ul>
+<button (click) ="toggleMessage()">Toggle Message</button>
+<h1 *ngIf="ismsg">Welcome to Angular</h1>
+<ul>
+    <li *ngFor="let s of students" [ngClass]="s==='Sam'?'active':null">{{s}}</li>
+</ul>
