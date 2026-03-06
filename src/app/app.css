@@ -2,3 +2,15 @@ h1
 {
     text-align:center;
 }
+.senior
+{
+    color:blue;
+    background-color:skyblue;
+}
+.success{
+    color:green;
+}
+.failure
+{
+    color:red;
+}

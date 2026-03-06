@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>To-Do List</h2>
+
+  <button (click)="toggleCompletedTasks()">
+    Toggle Completed Tasks
+  </button>
+
+  <ul>
+    <li *ngFor="let task of tasks">      
+      <!-- *ngIf hides completed tasks -->
+      <span *ngIf="showCompleted || !task.completed"
+            [ngClass]="{'completed-task': task.completed}">
+        {{ task.name }}
+      </span>
+
+      <button (click)="toggleTask(task)">
+        Mark Complete
+      </button>
+
+    </li>
+  </ul>
+</div>
