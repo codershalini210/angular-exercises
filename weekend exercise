@@ -1,0 +1,39 @@
+Create a component with a boolean variable isLoggedIn. Use *ngIf to display "Welcome User" when true and "Please Login" when false.
+
+Create a button Show Details. When clicked, toggle a variable and use *ngIf to show or hide a paragraph about Angular.
+
+Display a message "Cart is Empty" only when an array cartItems length is 0 using *ngIf.
+
+Show an "Admin Panel" section only when the variable role is "admin" using *ngIf.
+
+Display a discount message only if price > 1000 using *ngIf.
+
+Create an array of numbers [10,20,30,40,50]. Use *ngFor to display them inside <li> elements.
+
+Create an array of student names and display them in a table using *ngFor.
+
+Display a list of products with name and price using *ngFor.
+
+Use *ngFor to display a list of cities. Also display the index number with each city.
+
+Create an array of tasks. Use *ngFor to show all tasks inside a <ul> list.
+
+Create a button "Active / Inactive". Use [ngClass] to apply class "active" when true and "inactive" when false.
+
+Display a score. Use [ngClass] to apply "pass" class if score ≥ 40 and "fail" if score < 40.
+
+Use [ngClass] to highlight a selected item in a list.
+
+Create a div that changes background color when a variable isHighlighted becomes true using [ngClass].
+
+Apply multiple classes using [ngClass] depending on conditions (isAdmin, isLoggedIn).
+
+Create a child component that receives a name using @Input and displays "Hello {{name}}".
+
+Create a product-card component that receives productName and price using @Input and displays them.
+
+Pass a title from parent component to child component using @Input and display it inside an <h2>.
+
+Create a user-card component that receives userName and city using @Input and displays them.
+
+Pass an array of students from parent to child component using @Input and display them in the child component using *ngFor.
