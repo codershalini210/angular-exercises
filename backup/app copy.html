@@ -1,0 +1,32 @@
+<!-- <ul>
+    <li *ngFor="let s of students">{{s}}</li>
+</ul> -->
+<h2>{{"Ron d Santner" | initials}}</h2>
+<h1>{{"John Capner" | initials}}</h1>
+<app-task [username]="name"></app-task>
+<hr>
+<app-pipeseg></app-pipeseg>
+
+
+<!-- <p [class]="isSuccess?'success':'failure'">This is some dummy text</p>
+<ul>
+    <li *ngFor="let s of students">
+        <p [class.senior]="s.age>14">name: {{s.name}} -- age: {{s.age}} </p></li>
+</ul>
+
+<button (click)="showMesageTrue()">Showmessage </button>
+<h1 *ngIf="showMessage">Welcome to Angular !</h1>
+<hr/>
+<button *ngIf="!userLoggedIn" (click)= "setlogin()">Login</button>
+<h1 *ngIf="userLoggedIn">Welcome User</h1>
+<button *ngIf="userLoggedIn" (click)= "logout()">Logout</button>
+<app-todo-que></app-todo-que> -->
+
+<!-- <h1>Welcome To Angular</h1>
+<h2>Count :{{count}} </h2>
+<button (click)="childComp.childMethod()">Calling method of counter</button>
+<app-counter-component #childComp [count]="count" (handleCount)="setCount($event)"></app-counter-component>
+<p>Selected PostCode: {{SelectedPostCode}}</p>
+<app-postcode-card (mapRequested)="setSelectedPostCode($event)" [postcode]="postcode1" [area]="area1"></app-postcode-card>
+<app-postcode-card  (mapRequested)="setSelectedPostCode($event)" [postcode]="postcode2" [area]="area2"></app-postcode-card> -->
+<router-outlet />
