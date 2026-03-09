@@ -4,6 +4,7 @@ import {CommonModule} from "@angular/common"
 import {BlogPost} from "./blog-post/blog-post"
 import { CounterButtons } from './counter-buttons/counter-buttons';
 import { CounterDisplay } from './counter-display/counter-display';
+import { Loggerservice } from './loggerservice';
 @Component({
   selector: 'app-root',
   imports: [CommonModule,RouterOutlet,BlogPost,CounterButtons,CounterDisplay],
@@ -11,5 +12,10 @@ import { CounterDisplay } from './counter-display/counter-display';
   styleUrl: './app.css'
 })
 export class App {
-   protected readonly title = signal('angular-exercises');
+  constructor(public loggerservice : Loggerservice){}
+  ngOnInit()
+  {
+    this.loggerservice.log("hello from app component")
+  }
+  protected readonly title = signal('angular-exercises');
 }
